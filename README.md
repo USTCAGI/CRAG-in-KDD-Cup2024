@@ -28,7 +28,7 @@ Please find more details about the dataset in  [`dataset_description-v3.md`](./e
 
 ## 🏁 Our Solution
 
-![Framework](.\image\Framework.png)
+![Framework](./image/Framework.png)
 
 Our approach, akin to most Retrieval-Augmented Generation (RAG) systems, comprises two primary phases: retrieval and generation. In both phases, we implement routing mechanisms to address diverse query types.
 
