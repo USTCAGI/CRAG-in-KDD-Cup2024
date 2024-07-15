@@ -1,6 +1,6 @@
 # Meta KDD Cup '24 [CRAG: Comprehensive RAG Benchmark](https://www.aicrowd.com/challenges/meta-comprehensive-rag-benchmark-kdd-cup-2024) 🥈 Solution
 
-This repository is the 🥈 solution of **Meta KDD Cup '24 CRAG: Comphrensive RAG Benchmark **!
+This repository is the 🥈 solution of **Meta KDD Cup '24 CRAG: Comphrensive RAG Benchmark**!
 
 ## 📖 Competition Overview
 
@@ -182,8 +182,8 @@ pip install -r requirements.txt
 
   + use milvus lite
 
-    + run `models\retrieve\build_vector_db.py` for task 1&2
-    + run `models\retrieve\build_vector_db_task3.py` for task 3
+    + run `models/retrieve/build_vector_db.py` for task 1&2
+    + run `models/retrieve/build_vector_db_task3.py` for task 3
 
   + use milvus server
 
@@ -200,10 +200,10 @@ pip install -r requirements.txt
       ```
 
     + use `uri = "http://localhost:19530"`
-      + run `models\retrieve\build_vector_db.py` for task 1&2
-      + run `models\retrieve\build_vector_db_task3.py` for task 3
+      + run `models/retrieve/build_vector_db.py` for task 1&2
+      + run `models/retrieve/build_vector_db_task3.py` for task 3
 
-+ **Retriever **: Calculate embedding when evaluate
++ **Retriever**: Calculate embedding when evaluate
 
   + no change
 
