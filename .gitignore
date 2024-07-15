@@ -1,0 +1,12 @@
+.vscode
+__pycache__
+api_responses/*.json
+models/router/train*
+results
+local_evaluation_*.py
+*test*
+log
+models/retrieve/data
+models/retrieve/embedding_models
+models/retrieve/reranker_models
+models/llm
