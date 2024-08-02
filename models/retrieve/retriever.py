@@ -166,9 +166,9 @@ class Retriever_Milvus:
         if self.rerank:
             self.reranker = self.reranker = SentenceTransformerRerank(top_n=self.top_k, model=reranker_model_path, device=device)
            
-    def retrieve(self, query, iteraction_id, search_results):
+    def retrieve(self, query, interaction_id, search_results):
         metadata_filter = MetadataFilters(
-            filters=[ExactMatchFilter(key="interaction_id", value=f"{iteraction_id}")]
+            filters=[ExactMatchFilter(key="interaction_id", value=f"{interaction_id}")]
         )
         retriever = self.index.as_retriever(similarity_top_k=self.top_n, filters=metadata_filter)
         nodes = retriever.retrieve(query)

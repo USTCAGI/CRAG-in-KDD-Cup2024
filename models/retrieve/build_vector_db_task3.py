@@ -42,7 +42,7 @@ vectorstore = Milvus(
     }
 )
 
-files_path = [f"./dara/crag_task_3_dev_v3/crag_task_3_dev_v3_{i}.jsonl" for i in range(10)]
+files_path = [f"./data/crag_task_3_dev_v3/crag_task_3_dev_v3_{i}.jsonl" for i in range(10)]
 
 for file_path in files_path:
     all_data = []

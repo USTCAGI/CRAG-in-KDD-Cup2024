@@ -1,6 +1,6 @@
-# Meta KDD Cup '24 [CRAG: Comprehensive RAG Benchmark](https://www.aicrowd.com/challenges/meta-comprehensive-rag-benchmark-kdd-cup-2024) 🥈 Solution
+# Meta KDD Cup '24 [CRAG: Comprehensive RAG Benchmark](https://www.aicrowd.com/challenges/meta-comprehensive-rag-benchmark-kdd-cup-2024) 🥈 Solution for Task 2&3
 
-This repository is the 🥈 solution of **Meta KDD Cup '24 CRAG: Comphrensive RAG Benchmark**!
+This repository is the 🥈 solution of **Meta KDD Cup '24 CRAG: Comphrensive RAG Benchmark** for task 2&3!
 
 ## 📖 Competition Overview
 
@@ -44,6 +44,8 @@ Model Weights locate at `models/router`.
 
 #### Web Pages
 
+![web](./image/web_retriever.png)
+
 1. **HTML Parsing**: Convert structured HTML into natural language text with [`newspaper3k`](https://github.com/codelucas/newspaper).
 2. **Pre-ranking** (Task 3 only): Segment text from Web Pages into chunks of **1024** tokens. Use **BM25** to select the top **50** relevant text blocks.
 3. **Ranking**: Segment text blocks into **256**-token chunks, transform them into embeddings using the `bge-m3` model, and select the top 10 relevant chunks based on cosine similarity.
@@ -52,6 +54,8 @@ Model Weights locate at `models/router`.
 For more detail, refers to `models/retrieve/retriever.py`.
 
 #### Mock APIs
+
+![mock](./image/API_extractor.png)
 
 1. **Named Entity Recognition (NER)**: Use Llama3-70B to classify named entities in questions into predefined categories specific to each domain.
 2. **Entity Match**: Match extracted entities with API input parameters (e.g., converting company names to ticker symbols for finance APIs).
