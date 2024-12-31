@@ -1,4 +1,4 @@
-# Meta KDD Cup '24 [CRAG: Comprehensive RAG Benchmark](https://www.aicrowd.com/challenges/meta-comprehensive-rag-benchmark-kdd-cup-2024) 🥈 Solution for Task 2&3
+# Meta KDD Cup '24 [CRAG: Comprehensive RAG Benchmark](https://ustc-rag-x.github.io/) 🥈 Solution for Task 2&3
 
 This repository is the 🥈 solution of **Meta KDD Cup '24 CRAG: Comphrensive RAG Benchmark** for task 2&3!
 
