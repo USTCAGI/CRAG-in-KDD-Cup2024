@@ -235,3 +235,10 @@ run `main.py`
 
 run `evaluation.py`
 
+
+## Other
+
+### Google Drive
+
+You can download all required LFS files, from this Google Drive link: [Google Drive Folder](https://drive.google.com/drive/folders/16k2fM8O9JlKmh8hdxd2L9H-Wonc_2yyb?usp=drive_link).
+
