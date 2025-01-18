@@ -55,6 +55,7 @@ class RAGModel:
                     [("system", SYSTEM_PROMPT), ("user", FEWSHOT_COT_FINANCE)],
                 )
             }
+            self.rag_chain = self.format_messages_without_kg | chat_model | StrOutputParser() | self.get_final_answer_content
         
         self.chat_model = chat_model
         self.retriever = retriever
