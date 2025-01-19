@@ -118,12 +118,9 @@ if __name__ == "__main__":
 
     # Load the domain router
     domain_router = SequenceClassificationRouter(
-        model_path="models/llm/Meta-Llama-3-8B-Instruct-hf",
+        model_path="models/router/bge-m3/domain",
         classes=["finance", "music", "movie", "sports", "open"],
         device_map="auto",
-        peft_path="models/router/domain",
-        use_bits_and_bytes=True,
-        use_peft=True,
     )
 
     # Load the dynamic router
@@ -131,12 +128,9 @@ if __name__ == "__main__":
     use_dynamic = True
     if use_dynamic:
         dynamic_router = SequenceClassificationRouter(
-            model_path="models/llm/Meta-Llama-3-8B-Instruct-hf",
+            model_path="models/router/bge-m3/dynamic",
             classes=['static', 'slow-changing', 'fast-changing', 'real-time'],
             device_map="auto",
-            peft_path="models/router/dynamic",
-            use_bits_and_bytes=True,
-            use_peft=True
         )
     # Initialize the RAG model
         rag_model = RAGModel(chat_model, retriever, domain_router, dynamic_router, use_kg=use_kg)

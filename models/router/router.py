@@ -41,6 +41,7 @@ class SequenceClassificationRouter:
 
     def __call__(self, text):
         inputs = self.tokenizer(text, return_tensors="pt", padding=True, truncation=True)
+        inputs = {k: v.to(self.model.device) for k, v in inputs.items()}
         outputs = self.model(**inputs)
         logits = outputs.logits
         predicted_class_idx = logits.argmax().item()

@@ -52,9 +52,11 @@ Our approach, akin to most Retrieval-Augmented Generation (RAG) systems, compris
 
 We designed two specialized routers: the **Domain Router** and the **Dynamism Router**.
 
-We trained **Sentence Classifiers** as routers for Domain and Dynamism based on **Llama3-8B-Instruct**.
+We trained **Sequence Classifiers** as routers for Domain and Dynamism based on **BGE-M3**.
 
-Model Weights locate at `models/router`.
+Model Weights locate at `models/router/bge-m3/`:
+- Domain Router: `models/router/bge-m3/domain/` (5-class classifier)
+- Dynamic Router: `models/router/bge-m3/dynamic/` (4-class classifier)
 
 ### Retriever
 
